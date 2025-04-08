@@ -17,8 +17,16 @@ GIT 414
     <!--Add a skip to main link.-->
     <body>
         <a href="#main" class="skip-link">Skip to Main Content</a>
+        <!--Based off the content page, it goes header h1, the logo, and possibly the tag line that says "let wunderlust help you plan the trip of your dreams, and then the navigation at the bottom."-->
+        <!--The image responsive widths are: 320w, 780w, and 1024w. 320w is the short logo, 780w is the medium, and 1024w is the largest logo.-->
         <header>
             <h1>Wunderlust Travel</h1>
+            <picture>
+                <source media="(min-width: 1024px)" srcset="images/logo-L.png">
+                <source media="(max-width: 780px)" srcset="images/logo-M.png">
+                <source media="(max-width: 320px)" srcset="images/logo-S.png">
+                <img src="images/logo-L.png" alt="This image is the logo for the Wunderlust Travel website.">
+            </picture>
         </header>
         
     </body>
