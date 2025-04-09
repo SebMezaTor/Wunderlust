@@ -228,6 +228,7 @@ GIT 414
 
                                                         <label for="last-name">Last Name:</label>
                                                         <input type="text" id="last-name" autocomplete="name" required>
+                                                        <!--Legend begins here.-->
 
                                                         <fieldset>
                                                             <legend>Contact Method</legend>
@@ -240,6 +241,38 @@ GIT 414
                                                             <input type="radio" id="phone" name="phone">
                                                             <label for="phone">Phone</label>
                                                         </fieldset>
+
+                                                        <label for="email">Email Address:</label>
+                                                        <input type="email" id="email" name="email" autocomplete="email" required>
+
+                                                        <label for="phone">Phone Number:</label>
+                                                        <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+
+                                                        <!--This is where the select tags start. Theres one set for destination and the other for travel time.-->
+
+                                                        <label for="destination">Destination</label>
+                                                        <select id="destination" name="destination" required>
+                                                            <option value="">Select your Destination</option>
+                                                            <option value="barcelona">Barcelona</option>
+                                                            <option value="granada">Granada</option>
+                                                            <option value="ibiza">Ibiza</option>
+                                                            <option value="madrid">Madrid</option>
+                                                            <option value="majorca">Majorca</option>
+                                                            <option value="seville">Seville</option>
+                                                            <option value="tenerife">Tenerife</option>
+                                                            <option value="valencia">Valencia</option>
+                                                        </select>
+
+                                                        <label for="traveltime">Travel Time</label>
+                                                        <select name="traveltime" id="traveltime" required>
+                                                            <option value="">Select Travel Time</option>
+                                                            <option value="fall">Fall</option>
+                                                            <option value="winter">Winter</option>
+                                                            <option value="spring">Spring</option>
+                                                            <option value="summer">Summer</option>
+                                                            <option value="flexible">Flexible</option>
+
+                                                        </select>
 
                                                     </form>
                                                   </section>
