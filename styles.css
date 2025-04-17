@@ -279,6 +279,28 @@ input:checked ~ label {
 
 #testimonials {
     padding: 90px 0px;
+    
+}
+
+#testimonials h4 {
+    top: 20px;
+    font-weight: bold;
+}
+
+#testimonials section {
+    text-align: center;
+}
+
+q {
+    font-style: italic;
+    margin-top: 8px;
+    position: relative;
+    
+}
+
+#testimonials p {
+    margin: 2px;
+    
 }
 
 #about {
