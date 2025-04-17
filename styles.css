@@ -9,7 +9,7 @@ April 16th, 2025
    v2.0 | 20110126
    License: none (public domain)
 */
-
+/* CSS Reset */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -53,8 +53,11 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/* URL for the Molle and Montserrat fonts */
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Habibi&family=Irish+Grover&family=Molle&family=Montserrat&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+/* Root */
 
 :root {
     --yellow: #F6D64A;
@@ -69,4 +72,34 @@ table {
     font-family: 'Molle', serif;
     font-family: 'Montserrat', sans-serif;
     
+}
+/* Looking at the HTML file, there is an input and label for the header which wasn't in the previous assignments. Make sure to include the styles for it as you're working from top to bottom. S-r only is a class for the h2 main navigation. There is also a skip link for the body, don't forget to style those. */
+
+/* Skip Link */
+#skip {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    overflow: hidden;
+    left: -10000px
+}
+/* skip link pseudo element */
+#skip:focus {
+    height: auto;
+    width: auto;
+    position: static;
+}
+
+/* Heading styles */
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-image: linear-gradient(to bottom, var(--teal), var(--white));
+}
+
+/* header a logo */
+header a {
+    grid-row: 1/2;
+    grid-column: 1/2;
 }
