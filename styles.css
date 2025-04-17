@@ -271,3 +271,38 @@ input:checked ~ label {
     border-color: var(--white);
 
 }
+
+#plan div section a, #plan section div h4 {
+    padding: 1px;
+    margin: 0 auto;
+}
+
+#testimonials {
+    padding: 90px 0px;
+}
+
+#about {
+    background-color: var(--blue);
+    margin-bottom: 30px;
+    padding: 120px 15px;
+}
+
+#about div {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+#about div p {
+    padding-left: 1px;
+    margin: 20px;
+
+}
+
+#about div section img {
+    width: 100%;
+    height: auto;
+    max-height: 75px;
+    min-height: 15px;
+    
+}
