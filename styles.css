@@ -282,6 +282,11 @@ input:checked ~ label {
     
 }
 
+#testimonials h3 {
+    font-size: 30px;
+
+}
+
 #testimonials h4 {
     top: 20px;
     font-weight: bold;
@@ -413,6 +418,7 @@ select, .custom-select:after {
     grid-template-areas: "select";
     cursor: pointer;
 }
+
     
 
 footer {
