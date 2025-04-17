@@ -69,11 +69,14 @@ table {
     --white: #FFFFFF;
     --black: #000000;
     font-size: 16px;
+    box-sizing: border-box;
     font-family: 'Molle', serif;
     font-family: 'Montserrat', sans-serif;
     
 }
-/* Looking at the HTML file, there is an input and label for the header which wasn't in the previous assignments. Make sure to include the styles for it as you're working from top to bottom. S-r only is a class for the h2 main navigation. There is also a skip link for the body, don't forget to style those. */
+/* Looking at the HTML file, there is an input and label for the header which wasn't in the previous assignments. Make sure to include the styles for it as you're working. S-r only is a class for the h2 main navigation. There is also a skip link for the body, don't forget to style those. */
+
+/* Global Styles */
 
 /* Skip Link */
 #skip {
@@ -96,10 +99,124 @@ header {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     background-image: linear-gradient(to bottom, var(--teal), var(--white));
+    height: 220px;
+}
+
+h1, h2, h3 {
+    font-family: 'Molle', serif;
+    padding-left: 21px;
+}
+
+h4, p,q, small, nav, button, form {
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* header a logo */
 header a {
     grid-row: 1/2;
     grid-column: 1/2;
+}
+
+header h1 {
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+header p {
+    margin-left: 20px;
+    line-height: 35px;
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+/* Needs some sort of pointer when hovering over it. */
+header label {
+    position: absolute;
+    right: 0;
+    top: 36px;
+    width: 90px;
+    padding: 18px 47px;
+    background-color: var(--yellow);
+    text-align: center;
+
+}
+
+header input {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+header input ~ ul {
+    overflow: hidden;
+    max-height: 0px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Nav Styles */
+nav {
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--black);
+    margin-top: 15px;
+}
+
+.sr-only {
+    width: 1px;
+    white-space: nowrap;
+    height: 1px;
+    position: absolute;
+    overflow: hidden;
+    border: 0px;
+    padding: 0px;
+    clip: rect(0, 0, 0, 0);
+    margin: -1px;
+}
+
+li {
+    font-weight: bold;
+    padding: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    border: 2px solid var(--black);
+    margin-bottom: 0px;
+    margin-top: -1px;
+    background-color: var(--teal);
+}
+
+input:checked ~ ul {
+    position: absolute;
+    overflow: visible;
+    width: 100%;
+    left: 0px;
+    top: 25px;
+    min-height: 360px;
+}
+
+input:checked ~ label {
+    width: 85%;
+    top: 0px;
+    background-color: var(--dark-gray);
+    color: var(--white);
+    text-align: center;
+}
+
+
+.active {
+    margin-top: -4px;
+    background-color: var(--yellow);
+}
+
+#main-content {
+    display: grid;
+    grid-template-columns: 1fr;
 }
