@@ -216,7 +216,29 @@ input:checked ~ label {
     background-color: var(--yellow);
 }
 
-#main-content {
+#main_content {
     display: grid;
     grid-template-columns: 1fr;
+}
+
+#intro {
+    margin-top: 3rem;
+    padding-bottom: 15px;
+}
+
+#intro p {
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+
+#img-grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+    column-gap: 15px;
+}
+
+#img-grid img {
+    width: 100%;
 }
