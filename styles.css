@@ -53,3 +53,20 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Habibi&family=Irish+Grover&family=Molle&family=Montserrat&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root {
+    --yellow: #F6D64A;
+    --teal: #55BCD5;
+    --purple: #9B26B0;
+    --blue: #499BD2;
+    --dark-gray: #222222;
+    --light-gray: #EAEAEA;
+    --white: #FFFFFF;
+    --black: #000000;
+    font-size: 16px;
+    font-family: 'Molle', serif;
+    font-family: 'Montserrat', sans-serif;
+    
+}
