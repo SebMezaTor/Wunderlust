@@ -242,3 +242,32 @@ input:checked ~ label {
 #img-grid img {
     width: 100%;
 }
+
+#plan {
+    padding-bottom: 1rem;
+    background-color: var(--yellow);
+    padding-top: 1rem;
+}
+
+#plan h3 {
+    top: 4px;
+    position: relative;
+    text-align: center;
+}
+
+#plan div {
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+#plan div section {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    background-color: var(--teal);
+    margin: 15px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: var(--white);
+
+}
