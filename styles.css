@@ -328,3 +328,22 @@ q {
     min-height: 15px;
     
 }
+
+footer {
+    display: grid;
+    background-color: var(--light-gray);
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 6px;
+}
+
+footer p {
+    font-size: 15px;
+    margin: 8px;
+}
+
+footer a {
+    color: var(--black);
+    text-decoration: none;
+    margin: 5px;
+}
