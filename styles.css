@@ -470,6 +470,7 @@ footer a {
 
 /* End of Global Styles */
 
+/* Medium Screen Size */
 @media screen and (min-width: 600px) {
     header {
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -576,5 +577,45 @@ footer a {
 
     footer p {
         padding-top: 1px;
+    }
+}
+
+/* End of medium screen size styles */
+
+/* Large screen size styles */
+
+@media screen and (min-width: 950px) {
+    header {
+        margin-bottom: -50px;
+    }
+
+    header h1 {
+        position: absolute;
+        left: 200px;
+        top: 25px;
+    }
+
+    header p {
+        position: absolute;
+        top: 130px;
+        left: 229px;
+    }
+
+    header nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    header input ~ ul {
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-top: 0;
+    }
+
+    li {
+        width: 100px;
+        padding: 20px 20px 20px 20px;
     }
 }
