@@ -524,4 +524,17 @@ footer a {
         width: 100%;
         margin: 0 auto;
     }
+
+    #plan div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 60px;
+        margin: 0 auto;
+    }
+
+    #testimonials div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
