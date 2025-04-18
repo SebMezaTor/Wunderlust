@@ -544,8 +544,8 @@ footer a {
         width: 100px;
         border: none;
         background-color: var(--white);
+        font-size: 12px;
         
-
     }
 
     header nav {
@@ -641,6 +641,7 @@ footer a {
         position: absolute;
         top: 0;
         right: 0;
+        
     }
 
     header input ~ ul {
@@ -648,12 +649,17 @@ footer a {
         right: 0;
         top: 0;
         margin-top: 0;
+        
     }
 
     li {
         width: 100px;
-        padding: 20px 20px 20px 20px;
+        padding: 15px 20px 20px 15px;
+        font-size: 13px;
+        
     }
+
+    /* Added a font size to the li nav to fit. */
 
     #intro {
         display: grid;
@@ -702,5 +708,14 @@ footer a {
         margin-left: 10px;
     }
 
-    
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+
 }
+
+/* List of things to fix: The navigation font size (all screens), the footer for the large screen, adjust the heading sizes for each section, add quotation marks for the testimonials, fix the padding sizes for the navigation. */
