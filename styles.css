@@ -242,7 +242,7 @@ input:checked ~ label {
 #img-grid img {
     width: 100%;
 }
-
+/* Plan section */
 #plan {
     padding-bottom: 1rem;
     background-color: var(--yellow);
@@ -276,7 +276,7 @@ input:checked ~ label {
     padding: 1px;
     margin: 0 auto;
 }
-
+/* Testimonials section */
 #testimonials {
     padding: 90px 0px;
     
@@ -307,7 +307,7 @@ q {
     margin: 2px;
     
 }
-
+/* About your destination styles */
 #about {
     background-color: var(--blue);
     margin-bottom: 30px;
@@ -333,7 +333,7 @@ q {
     min-height: 15px;
     
 }
-
+/* Form styles */
 #contact {
     display: flex;
     flex-direction: column;
@@ -372,6 +372,18 @@ label, legend {
     font-size: 16px;
 }
 
+input[type="radio"] {
+    background-color: var(--white);
+    appearance: none;
+    border: 3px solid var(--purple);
+    border-radius: 50%;
+
+}
+
+input[type="radio"]:checked {
+    background-image: radial-gradient(var(--purple) 50%, var(--white) 50%);
+}
+
 input, select {
     border: 2px solid var(--purple);
     padding: 15px;
@@ -407,10 +419,15 @@ select, .custom-select:after {
     grid-area: select;
 }
 
+select {
+    appearance: none;
+}
+
 .custom-select {
     width: 100%;
     border-radius: 5px;
     font-size: 18px;
+    border: 1px solid var(--select-border);
     line-height: 1px;
     background-color: var(--white);
     display: grid;
@@ -419,8 +436,18 @@ select, .custom-select:after {
     cursor: pointer;
 }
 
-    
+.custom-select::after {
+    width: 1rem;
+    height: 1rem;
+    background-color: var(--purple);
+    justify-self: end;
+    content: "";
+    margin-bottom: 18px;
+    margin-right: 8px;
+    clip-path: polygon(50% 81%, 100% 50%, 50% 100%, 0% 50%);
 
+}
+/* Footer styles */
 footer {
     display: grid;
     background-color: var(--light-gray);
@@ -440,3 +467,5 @@ footer a {
     margin: 5px;
     font-size: 15px;
 }
+
+/* End of Global Styles */
