@@ -690,6 +690,12 @@ footer a {
 
     }
 
+    #about div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
     #contact {
         display: block;
         max-width: 1200px;
@@ -718,4 +724,4 @@ footer a {
 
 }
 
-/* List of things to fix: The navigation font size (all screens), the footer for the large screen, adjust the heading sizes for each section, add quotation marks for the testimonials, fix the padding sizes for the navigation. */
+/* List of things to fix: The navigation font size (all screens), the footer for the large screen, adjust the heading sizes for each section, add quotation marks for the testimonials, fix the padding sizes for the navigation, fix the about section for the large screen, fix footer font size for the medium screen size. */
