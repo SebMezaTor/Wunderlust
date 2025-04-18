@@ -78,6 +78,13 @@ table {
 
 /* Global Styles */
 
+/* HTML styles */
+html, body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
 /* Skip Link */
 #skip {
     width: 1px;
@@ -105,11 +112,16 @@ header {
 h1, h2, h3 {
     font-family: 'Molle', serif;
     padding-left: 21px;
+    font-size: 30px;
 }
+
+/* Added font sizes to the h1, h2, and h3 to match the preview. */
 
 h4, p,q, small, nav, button, form {
     font-family: 'Montserrat', sans-serif;
+    line-height: 1.5em;
 }
+
 
 /* header a logo */
 header a {
@@ -117,10 +129,18 @@ header a {
     grid-column: 1/2;
 }
 
+h4, label {
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
 header h1 {
     grid-column: 1/3;
     grid-row: 2/3;
+    
 }
+/* Added a font size of 40 for the header h1. */
 
 header p {
     margin-left: 20px;
@@ -216,6 +236,8 @@ input:checked ~ label {
     background-color: var(--yellow);
 }
 
+/* Main content begins here */
+
 #main_content {
     display: grid;
     grid-template-columns: 1fr;
@@ -224,7 +246,10 @@ input:checked ~ label {
 #intro {
     margin-top: 3rem;
     padding-bottom: 15px;
+    
 }
+
+/* Added a font size of 40px for the Majorca (intro) heading. */
 
 #intro p {
     line-height: 2rem;
@@ -494,8 +519,9 @@ footer a {
         grid-row: 1/2;
         margin-top: 20px;
         margin-left: -20px;
-        font-size: 45px;
+        
     }
+    /* Note to myself: Header h1 had a font size of 45px in the medium screen size. */
 
     header p {
         margin-top: -20px;
